@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>Best trip</title>
+</head>
+<body>
+    <div class="ajuda">
+        <a href="" style="text-decoration: none; color: black;">ajuda</a>
+    </div>
+    <div class="minhasviagens">
+        <a href="" style="text-decoration: none; color: black;">minhas viagens</a>
+    </div>
+    <div class="decoleconosco">
+        <a href="" style="text-decoration: none; color: black;">decole conosco</a>
+    </div>
+    <div class="menu">
+        <a href="">
+            <img src="https://fv5-5.files.fm/thumb_show.php?i=bvfggtawaz&view&v=1&PHPSESSID=14846441969e5620a7604684417775abbec38d18" alt="menu" width="45">
+    </div>
+    <div class="logo">
+        <img src="https://i.imgur.com/hMzFr1n.png" width="150">
+    </div>
+     <div class="search" role="search">
+        <input type="text" placeholder="adicione sua localização" aria-label="adicione sua localização"/>
+      </div>
+ <style>
+    .menu{
+        position: absolute;
+        top:11px ;
+        left:1220 ;
+        padding:8px 18px 16px 47px;
+        outline:none; background:#dbdbdb; 
+    }
+    .minhasviagens{
+        position: absolute;
+        text-align: justify;
+        top: 11px;
+        left: 770;
+        font-size: 33px;
+        white-space: nowrap;
+        padding:16px 18px 16px 10px;
+        outline:none; background: #dbdbdb; 
+    }
+    .decoleconosco{
+        position: absolute;
+        text-align: justify;
+        top: 11px;
+        left: 1000px;
+        font-size: 33px;
+        white-space: nowrap;
+        padding:16px 125px 16px 11px;
+        outline:none; background:#dbdbdb; 
+        width: 100px;
+    }
+     .ajuda{
+        color: black;
+        position: absolute;
+        text-align: center;
+        top:11px ;
+        left: 639;
+        font-size: 33px;
+        white-space: nowrap;
+        padding:16px 30px 16px 30px;
+        outline:none; background:#dbdbdb; 
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+    }
+    .logo{
+        position: absolute;
+        top: 0;
+    }
+    .search{
+        left: 100;
+        top: 70;
+        position:relative;
+        margin:70px auto 24px;
+        max-width:520px;
+    }
+    .search input{
+      width:70%;
+      padding:16px 18px 16px 48px;
+      font-size:16px;
+      outline:none; background:#fff; color:#111827;
+    }
+
+ </style>
+</body>
+</html>
