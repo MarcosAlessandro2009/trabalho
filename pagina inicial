@@ -24,14 +24,14 @@
       </div>
  <style>
     .menu{
-        position: absolute;
+        position: fixed;
         top:11px ;
-        left:1220 ;
+        left:1820 ;
         padding:8px 18px 16px 47px;
         outline:none; background:#dbdbdb; 
     }
     .minhasviagens{
-        position: absolute;
+        position: fixed;
         text-align: justify;
         top: 11px;
         left: 770;
@@ -41,10 +41,10 @@
         outline:none; background: #dbdbdb; 
     }
     .decoleconosco{
-        position: absolute;
+        position: fixed;
         text-align: justify;
         top: 11px;
-        left: 1000px;
+        left: 1500px;
         font-size: 33px;
         white-space: nowrap;
         padding:16px 125px 16px 11px;
@@ -53,7 +53,7 @@
     }
      .ajuda{
         color: black;
-        position: absolute;
+        position: fixed;
         text-align: center;
         top:11px ;
         left: 639;
@@ -65,13 +65,13 @@
         border-bottom-left-radius: 25px;
     }
     .logo{
-        position: absolute;
+        position: fixed;
         top: 0;
     }
     .search{
         left: 100;
         top: 70;
-        position:relative;
+        position:fixed;
         margin:70px auto 24px;
         max-width:520px;
     }
