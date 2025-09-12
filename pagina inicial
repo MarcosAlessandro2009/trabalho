@@ -25,16 +25,16 @@
  <style>
     .menu{
         position: fixed;
-        top:11px ;
+        top:20px ;
         left:1820 ;
-        padding:8px 18px 16px 47px;
+        padding:8px 18px 15px 47px;
         outline:none; background:#dbdbdb; 
     }
     .minhasviagens{
         position: fixed;
         text-align: justify;
-        top: 11px;
-        left: 770;
+        top: 20px;
+        left: 1270;
         font-size: 33px;
         white-space: nowrap;
         padding:16px 18px 16px 10px;
@@ -43,11 +43,11 @@
     .decoleconosco{
         position: fixed;
         text-align: justify;
-        top: 11px;
-        left: 1500px;
+        top: 20px;
+        left: 1550px;
         font-size: 33px;
         white-space: nowrap;
-        padding:16px 125px 16px 11px;
+        padding:16px 175px 16px 11px;
         outline:none; background:#dbdbdb; 
         width: 100px;
     }
@@ -55,8 +55,8 @@
         color: black;
         position: fixed;
         text-align: center;
-        top:11px ;
-        left: 639;
+        top:20px ;
+        left: 1129;
         font-size: 33px;
         white-space: nowrap;
         padding:16px 30px 16px 30px;
@@ -69,15 +69,16 @@
         top: 0;
     }
     .search{
-        left: 100;
-        top: 70;
+        left: 800;
+        top: 90;
         position:fixed;
         margin:70px auto 24px;
-        max-width:520px;
+        max-width:390px;
+        width: 100%;
     }
     .search input{
-      width:70%;
-      padding:16px 18px 16px 48px;
+      width:100%;
+      padding:16px 10px 16px 48px;
       font-size:16px;
       outline:none; background:#fff; color:#111827;
     }
