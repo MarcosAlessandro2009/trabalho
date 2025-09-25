@@ -30,7 +30,6 @@
         .nav-links {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
             align-items: center;
         }
 
@@ -41,6 +40,14 @@
             padding: 20px 20px 20px 20px;
             white-space: nowrap;
             background:#dbdbdb;
+        }
+
+        .nav-linksalt{
+
+        }
+
+        .nav-linksalt a{
+            
         }
 
         .search {
@@ -106,11 +113,14 @@
         <div class="logo">
             <img src="https://i.imgur.com/hMzFr1n.png" alt="Logo">
         </div>
-
-        <nav class="nav-links">
+        
+        <nav class="nav-linksalt">
             <a href="">ajuda</a>
             <a href="">minhas viagens</a>
             <a href="">decole conosco</a>
+        </nav>
+
+        <nav class="nav-links">
             <a href="">
                 <img src="https://fv5-5.files.fm/thumb_show.php?i=bvfggtawaz&view&v=1&PHPSESSID=14846441969e5620a7604684417775abbec38d18" alt="menu" width="30">
             </a>
