@@ -14,13 +14,13 @@
 
         header {
             display: flex;
-            flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
             padding: 10px 20px;
             position: sticky;
             top: 0;
             z-index: 1000;
+            width: 100%;
         }
 
         .logo img {
@@ -29,25 +29,32 @@
 
         .nav-links {
             display: flex;
-            flex-wrap: wrap;
             align-items: center;
+            justify-content: flex-start;
+            background: #dbdbdb;
+            width: 50%; 
+            padding: 0;
+            border-radius: 8px;
+            overflow: hidden;
+            flex-direction: row-reverse; 
         }
 
         .nav-links a {
             text-decoration: none;
             color: black;
             font-size: 18px;
-            padding: 20px 20px 20px 20px;
+            padding: 20px;
             white-space: nowrap;
-            background:#dbdbdb;
+            text-align: center;
         }
 
-        .nav-linksalt{
-
-        }
-
-        .nav-linksalt a{
-            
+        .nav-links .menu-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background: #dbdbdb;
+            border-radius: 8px;
         }
 
         .search {
@@ -83,6 +90,8 @@
             .nav-links {
                 flex-direction: column;
                 align-items: flex-start;
+                width: 100%;
+                background: none;
             }
 
             .nav-links a {
@@ -113,17 +122,16 @@
         <div class="logo">
             <img src="https://i.imgur.com/hMzFr1n.png" alt="Logo">
         </div>
-        
-        <nav class="nav-linksalt">
-            <a href="">ajuda</a>
-            <a href="">minhas viagens</a>
-            <a href="">decole conosco</a>
-        </nav>
 
         <nav class="nav-links">
-            <a href="">
-                <img src="https://fv5-5.files.fm/thumb_show.php?i=bvfggtawaz&view&v=1&PHPSESSID=14846441969e5620a7604684417775abbec38d18" alt="menu" width="30">
-            </a>
+            <div class="menu-icon">
+                <a href="">
+                    <img src="https://fv5-5.files.fm/thumb_show.php?i=bvfggtawaz&view&v=1&PHPSESSID=14846441969e5620a7604684417775abbec38d18" alt="menu" width="30">
+                </a>
+            </div>
+            <a href="">decole conosco</a>
+            <a href="">minhas viagens</a>
+            <a href="">ajuda</a>
         </nav>
     </header>
 
