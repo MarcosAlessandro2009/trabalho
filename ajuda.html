@@ -1,0 +1,210 @@
+<html>
+<title> minha pagina com menu </title>
+
+<style>
+
+body{
+
+    font-family: Arial, sans-serif;
+            margin: 30;
+            padding: 30;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+
+
+        header {
+            background-color:rgb(2, 136, 156);
+            padding: 1rem;
+            color: white;
+            text-align: center;
+        }
+
+
+
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #ddd;
+        }
+
+        /* Estilos para o conteúdo principal */
+        main {
+            flex: 1; /* Faz com que o conteúdo principal ocupe o espaço restante */
+            padding: 2rem;
+            text-align: center;
+        }
+
+        /* Estilos para o rodapé */
+        footer {
+            background-color: #f0f0f0;
+            padding: 2rem;
+            text-align: center;
+            color: #555;
+        }
+
+        .footer-photos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Permite que as fotos quebrem a linha em telas menores */
+            gap: 15px; /* Espaço entre as fotos */
+            margin-top: 20px;
+        }
+
+        .footer-photos img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
+            border-radius: 8px; /* Cantos arredondados */
+            box-shadow: 0 4px 8px rgb(2, 133, 156); /* Sombra para dar profundidade */
+            transition: transform 0.3s;
+        }
+
+        .footer-photos img:hover {
+            transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+        }
+
+        footer p {
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        .logo{
+            width: 70px;
+            height: 70px;
+
+
+
+
+
+        }
+
+        .conteiner{
+            display: flex;
+            margin-left: 25%;
+        }
+
+        .lado-a-lado{
+            display: flex;
+        }
+
+        .pacotes{
+            padding: 20px;
+        }
+
+        .gastronomica{
+            padding: 20px;
+        }
+
+        .romantica{
+            padding: 20px;
+        }
+        
+        .turisticas{
+            padding: 20px;
+        }
+
+        .pacotes{
+
+           color: black;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+        }
+       
+        .promoções{
+            color: black;
+            font-size: 30px; 
+    font-family: Arial, sans-serif; 
+
+  
+    
+  
+        }
+       
+        .grid{
+            display: flex;
+        }
+
+        .ajuda-img{
+            width: 100px;
+        }
+            
+            
+            
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">ajuda</a></li>
+                <li><a href="#">minhas viagens</a></li>
+                <li><a href="#">decole conosco </a></li>
+                <li><a href="#"> meu perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+<input>
+
+<center>
+<div class="grid">
+
+        
+        <img class="ajuda-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwXUPnHqnDnIOcIuwT-rJ4RbYwj94Y9yZGfA&s">
+        <img class="ajuda-img" src="data:image/png;base64,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">
+        <img class="ajuda-img" src="https://images.vexels.com/media/users/3/137198/isolated/preview/07f0d7b69ef071571e4ada2f4d6a053a-icone-do-instagram-colorido.png">
+        
+    </div>
+    
+</center>
+
+    <footer>
+
+        <p>&copy; 2025 Minha Empresa. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
