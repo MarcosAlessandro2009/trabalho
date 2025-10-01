@@ -1,0 +1,602 @@
+<html>
+<title> minha pagina com menu </title>
+
+<style>
+    body {
+
+        font-family: Arial, sans-serif;
+        margin: 30;
+        padding: 30;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+
+
+    header {
+        background-color: rgb(2, 136, 156);
+        padding: 1rem;
+        color: white;
+        text-align: center;
+    }
+
+
+
+    header nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    header nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2rem;
+        transition: color 0.3s;
+    }
+
+    header nav a:hover {
+        color: #ddd;
+    }
+
+    /* Estilos para o conteúdo principal */
+    main {
+        flex: 1;
+        /* Faz com que o conteúdo principal ocupe o espaço restante */
+        padding: 2rem;
+        text-align: center;
+    }
+
+    /* Estilos para o rodapé */
+    footer {
+        background-color: #f0f0f0;
+        padding: 2rem;
+        text-align: center;
+        color: #555;
+    }
+
+    .footer-photos {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        /* Permite que as fotos quebrem a linha em telas menores */
+        gap: 15px;
+        /* Espaço entre as fotos */
+        margin-top: 20px;
+    }
+
+    .footer-photos img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        /* Garante que a imagem preencha o espaço sem distorção */
+        border-radius: 8px;
+        /* Cantos arredondados */
+        box-shadow: 0 4px 8px rgb(2, 133, 156);
+        /* Sombra para dar profundidade */
+        transition: transform 0.3s;
+    }
+
+    .footer-photos img:hover {
+        transform: scale(1.05);
+        /* Efeito de zoom ao passar o mouse */
+    }
+
+    footer p {
+        margin-top: 20px;
+        font-size: 0.9rem;
+    }
+
+    .logo {
+        width: 70px;
+        height: 70px;
+
+
+
+
+
+    }
+
+    .conteiner {
+        display: flex;
+        margin-left: 25%;
+    }
+
+    .lado-a-lado {
+        display: flex;
+    }
+
+    .pacotes {
+        padding: 20px;
+    }
+
+    .gastronomica {        cursor: pointer;
+
+    }
+
+    .romantica {
+        padding: 20px;
+    }
+
+    .turisticas {
+        padding: 20px;
+    }
+
+    .pacotes {
+
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+    }
+
+    .promoções {
+        color: black;
+        font-size: 30px;
+        font-family: Arial, sans-serif;
+
+
+
+
+    }
+
+    .grid {
+        display: flex;
+    }
+
+    .ajuda-img {
+        width: 100px;
+    }
+    
+    .card {
+        transition: 0.3s;
+        width: 200px;
+        padding: 30px;
+        cursor: pointer;
+    }
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.459);
+        background-color: #555;
+    }
+
+    .grid-card{
+        display: flex;
+    }
+
+</style>
+</head>
+
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">ajuda</a></li>
+                <li><a href="#">minhas viagens</a></li>
+                <li><a href="#">decole conosco </a></li>
+                <li><a href="#"> meu perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="grid-card">
+
+        
+       <div class="card">
+            <img src="https://midias.eurodicas.com.br/wp-content/uploads/2024/07/tudo-sobre-espanha-1.jpg.webp" alt="Avatar"
+            style="width:100%">
+            <h4><b>Espanha</b></h4>
+            <p>ida e volta</p>
+            <p>9 dias</p>
+        </div>
+        
+        <div class="card">
+            <img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/9666/live/c4e19e10-8f2f-11ef-b3c2-754b6219680e.jpg.webp"
+            Avatar" style="width:100%">
+            <h4><b>Vietnã</b></h4>
+            <p>ida e volta</p>
+            <p>8 dias</p>
+            <p></p>
+        </div>
+        
+        <div class="card">
+            <img src="https://tastetheworld.me/wp-content/uploads/2021/06/cultura-mexicana.jpg"
+            Avatar " style="width:100%">
+            <h4><b>México</b></h4>
+            <p>ida e volta</p>
+            <p>10 dias</p>
+            <p></p>
+        </div>
+        
+        
+        <div class="card">
+            <img src="https://passagenspromo.com.br/blog/wp-content/uploads/2023/08/Paris-1.jpg" Avatar" style="width:100%">
+            <h4><b>França</b></h4>
+            <p>ida e volta</p>
+            <p>10 dias</p>
+            <p></p>
+        </div>
+        
+        <div class="card">
+            <img src="https://www.kangaroo.com.br/images/india/india-agra-taj-mahal-templo.jpg"
+            alt="Avatar" style="width:100%">
+            <h4><b>Índia</b></h4>
+            <p>ida e volta</p>
+            <p>10 dias</p>
+            <p></p>
+        </div> 
+        
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrCgNkEE3ZaoTaSjCtpH-Kin8-hlTsJQBUEg&s" alt="Avatar"
+            style="width:100%">
+            <h4><b>Japão</b></h4>
+            <p>ida e volta</p>
+            <p>10 dias</p>
+            <p></p>
+        </div>
+
+        <div class="card">
+            <img src="https://www.travely.com.br/wp-content/uploads/2017/12/FOTO-TAILANDIA.jpg" alt="Avatar"
+            style="width:100%">
+            <h4><b>Tailândia</b></h4>
+            <p>ida e volta</p>
+            <p>10 dias</p>
+            <p></p>
+        </div>
+
+        <div class="card">
+            <img src="https://www.kangaroo.com.br/images/cover/montanhas-atlas-ksar-ait-ben-haddou-marrocos.jpg" alt="Avatar"
+            style="width:100%">
+            <h4><b>Macorros</b></h4>
+            <p>ida e volta</p>
+            <p>10 dias</p>
+        </div>
+
+        <div class="card">
+            <img src="https://viagemeturismo.abril.com.br/wp-content/uploads/2016/10/177493849.jpeg?quality=70&strip=info&w=925&w=636" alt="Avatar"
+            style="width:100%">
+            <h4><b>Itália</b></h4> 
+            <p>ida e volta</p>
+            <p>10 dias</p>
+        </div>
+
+    </div>
+    </div>
+    
+    <footer>
+        
+        <p>&copy; 2025 Minha Empresa. Todos os direitos reservados.</p>
+    </footer>
+    
+</body>
+
+</html>
+
+
+
+<html>
+<title> minha pagina com menu </title>
+
+<style>
+    body {
+
+        font-family: Arial, sans-serif;
+        margin: 30;
+        padding: 30;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+
+
+    header {
+        background-color: rgb(2, 136, 156);
+        padding: 1rem;
+        color: white;
+        text-align: center;
+    }
+
+
+
+    header nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    header nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2rem;
+        transition: color 0.3s;
+    }
+
+    header nav a:hover {
+        color: #ddd;
+    }
+
+    /* Estilos para o conteúdo principal */
+    main {
+        flex: 1;
+        /* Faz com que o conteúdo principal ocupe o espaço restante */
+        padding: 2rem;
+        text-align: center;
+    }
+
+    /* Estilos para o rodapé */
+    footer {
+        background-color: #f0f0f0;
+        padding: 2rem;
+        text-align: center;
+        color: #555;
+    }
+
+    .footer-photos {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        /* Permite que as fotos quebrem a linha em telas menores */
+        gap: 15px;
+        /* Espaço entre as fotos */
+        margin-top: 20px;
+    }
+
+    .footer-photos img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        /* Garante que a imagem preencha o espaço sem distorção */
+        border-radius: 8px;
+        /* Cantos arredondados */
+        box-shadow: 0 4px 8px rgb(2, 133, 156);
+        /* Sombra para dar profundidade */
+        transition: transform 0.3s;
+    }
+
+    .footer-photos img:hover {
+        transform: scale(1.05);
+        /* Efeito de zoom ao passar o mouse */
+    }
+
+    footer p {
+        margin-top: 20px;
+        font-size: 0.9rem;
+    }
+
+    .logo {
+        width: 70px;
+        height: 70px;
+
+
+
+
+
+    }
+
+    .conteiner {
+        display: flex;
+        margin-left: 25%;
+    }
+
+    .lado-a-lado {
+        display: flex;
+    }
+
+    .pacotes {
+        padding: 20px;
+    }
+
+    .gastronomica {        cursor: pointer;
+
+    }
+
+    .romantica {
+        padding: 20px;
+    }
+
+    .turisticas {
+        padding: 20px;
+    }
+
+    .pacotes {
+
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+    }
+
+    .promoções {
+        color: black;
+        font-size: 30px;
+        font-family: Arial, sans-serif;
+
+
+
+
+    }
+
+    .grid {
+        display: flex;
+    }
+
+    .ajuda-img {
+        width: 100px;
+    }
+    
+    .card {
+        transition: 0.3s;
+        width: 200px;
+        padding: 30px;
+        cursor: pointer;
+    }
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.459);
+        background-color: #555;
+    }
+
+    .grid-card{
+        display: flex;
+    }
+
+</style>
+</head>
+
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">ajuda</a></li>
+                <li><a href="#">minhas viagens</a></li>
+                <li><a href="#">decole conosco </a></li>
+                <li><a href="#"> meu perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="grid-card">
+
+        
+       <div class="card">
+            <img src="" alt="Avatar"
+            style="width:100%">
+            <h4><b>Paris, França</b></h4>
+            <p>ida e volta</p>
+            <p>9 dias</p>
+        </div>https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/9666/live/c4e19e10-8f2f-11ef-b3c2-754b6219680e.jpg.webp
+        <div class="card">
+            <img src=""
+            Avatar" style="width:100%">
+            <h4><b>Nova York, EUA</b></h4>
+            <p>ida e volta</p>
+            <p>8 dias</p>
+            <p></p>
+        </div>
+        
+        <div class="card">
+            <img src="https://tastetheworld.me/wp-content/uploads/2021/06/cultura-mexicana.jpg"
+            Avatar " style="width:100%">
+            <h4><b>Roma, Itáilia</b></h4>
+            <p>ida e volta</p>
+            <p>10 dias</p>
+            <p></p>
+        </div>
+        
+        
+        <div class="card">
+            <img src="https://passagenspromo.com.br/blog/wp-content/uploads/2023/08/Paris-1.jpg" Avatar" style="width:100%">
+            <h4><b>Tóquio, Japão</b></h4>
+            <p>ida e volta</p>
+            <p>10 dias</p>
+            <p></p>
+        </div>
+        
+        <div class="card">
+            <img src="https://www.kangaroo.com.br/images/india/india-agra-taj-mahal-templo.jpg"
+            alt="Avatar" style="width:100%">
+            <h4><b>Rio de Janeiro</b></h4>
+            <p>ida e volta</p>
+            <p>8 dias</p>
+            <p></p>
+        </div> 
+        
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrCgNkEE3ZaoTaSjCtpH-Kin8-hlTsJQBUEg&s" alt="Avatar"
+            style="width:100%">
+            <h4><b>Sydney, Austrália</b></h4>
+            <p>ida e volta</p>
+            <p>10 dias</p>
+            <p></p>
+        </div>
+
+        <div class="card">
+            <img src="https://www.travely.com.br/wp-content/uploads/2017/12/FOTO-TAILANDIA.jpg" alt="Avatar"
+            style="width:100%">
+            <h4><b>Cairo, Egito</b></h4>
+            <p>ida e volta</p>
+            <p>10 dias</p>
+            <p></p>
+        </div>
+
+        <div class="card">
+            <img src="https://www.kangaroo.com.br/images/cover/montanhas-atlas-ksar-ait-ben-haddou-marrocos.jpg" alt="Avatar"
+            style="width:100%">
+            <h4><b>Barcelona, Espanha</b></h4>
+            <p>ida e volta</p>
+            <p>10 dias</p>
+        </div>
+
+        <div class="card">
+            <img src="https://viagemeturismo.abril.com.br/wp-content/uploads/2016/10/177493849.jpeg?quality=70&strip=info&w=925&w=636" alt="Avatar"
+            style="width:100%">
+            <h4><b>Istambul, Turquia</b></h4> 
+            <p>ida e volta</p>
+            <p>10 dias</p>
+        </div>
+
+    </div>
+    </div>
+    
+    <footer>
+        
+        <p>&copy; 2025 Minha Empresa. Todos os direitos reservados.</p>
+    </footer>
+    
+</body>
+
+</html>
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
