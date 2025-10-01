@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página com Menu</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: rgb(2, 136, 156);
+            padding: 1rem;
+            color: white;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #ddd;
+        }
+
+        /* Estilos para o conteúdo principal */
+        main {
+            flex: 1; /* Faz com que o conteúdo principal ocupe o espaço restante */
+            padding: 2rem;
+            text-align: center;
+        }
+
+        /* Estilos para o rodapé */
+        footer {
+            background-color: #f0f0f0;
+            padding: 2rem;
+            text-align: center;
+            color: #555;
+            margin-bottom: -100px;
+        }
+
+        .footer-photos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Permite que as fotos quebrem a linha em telas menores */
+            gap: 15px; /* Espaço entre as fotos */
+            margin-top: 20px;
+        }
+
+        .footer-photos img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
+            border-radius: 8px; /* Cantos arredondados */
+            box-shadow: 0 4px 8px rgb(2, 133, 156); /* Sombra para dar profundidade */
+            transition: transform 0.3s;
+        }
+
+        .footer-photos img:hover {
+            transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+        }
+
+        footer p {
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        .logo {
+            width: 70px;
+            height: 70px;
+        }
+
+        .conteiner {
+            display: flex;
+            margin-left: 25%;
+        }
+
+        .lado-a-lado {
+            display: flex;
+        }
+
+        .pacotes {
+            padding: 20px;
+        }
+
+        .gastronomica {
+            padding: 20px;
+        }
+
+        .romantica {
+            padding: 20px;
+        }
+
+        .turisticas {
+            padding: 20px;
+        }
+
+        .pacotes {
+            color: black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .promoções {
+            color: black;
+            font-size: 30px;
+            font-family: Arial, sans-serif;
+        }
+
+        .grid-rede {
+            display: flex;
+            margin-left: 34%;
+        }
+
+        .ajuda-img {
+            width: 100px;
+            cursor: pointer;
+            padding: 20px;
+            transition: 0.5s;
+        }
+
+        .ajuda-img:hover {
+            width: 130px;
+            transition: 0.5s;
+        }
+
+        .telefone {
+            width: 9px;
+            padding: 10px;
+        }
+
+        /* Estilos do Chat */
+        .chat-container {
+            top: 200px;
+            right: 20px;
+            width: 100%;
+            height: 450px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .chat-header {
+            background-color: #02888c;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .chat-messages {
+            padding: 10px;
+            height: 250px;
+            overflow-y: auto;
+            border-bottom: 2px solid #ccc;
+
+        }
+
+        .chat-input {
+            display: flex;
+            padding: 10px;
+            height: 60px;
+        }
+
+        .chat-input textarea {
+            width: 100%;
+            padding: 10px;
+            resize: none;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .chat-input button {
+            background-color: #02888c;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin-left: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .chat-input button:hover {
+            background-color: #027a7c;
+        }
+
+        .chat-message {
+            margin: 10px 0;
+        }
+
+        .chat-message span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">ajuda</a></li>
+                <li><a href="#">minhas viagens</a></li>
+                <li><a href="#">decole conosco</a></li>
+                <li><a href="#">meu perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <center> 
+        <h1>DECOLE CONOSCO</h1>
+        <h2>(44) 9999-99999</h2>
+    </center>
+
+    <!-- Chat Container -->
+    <div class="chat-container">
+        <div class="chat-header">
+            <h3>Chat</h3>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <!-- Mensagens do chat aparecerão aqui -->
+        </div>
+        <div class="chat-input">
+            <textarea id="message-input" rows="3" placeholder="Digite sua mensagem..."></textarea>
+            <button onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Minha Empresa. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function sendMessage() {
+            const messageInput = document.getElementById("message-input");
+            const messageText = messageInput.value.trim();
+            
+            if (messageText !== "") {
+                // Exibe a mensagem do usuário
+                const messageContainer = document.createElement("div");
+                messageContainer.classList.add("chat-message");
+                
+                const messageElement = document.createElement("p");
+                messageElement.innerHTML = `<span>Você:</span> ${messageText}`;
+                messageContainer.appendChild(messageElement);
+
+                document.getElementById("chat-messages").appendChild(messageContainer);
+
+                // Resposta automática
+                const response = getResponse(messageText);
+                if (response) {
+                    setTimeout(() => {
+                        const botMessageContainer = document.createElement("div");
+                        botMessageContainer.classList.add("chat-message");
+                        
+                        const botMessageElement = document.createElement("p");
+                        botMessageElement.innerHTML = `<span>Bot:</span> ${response}`;
+                        botMessageContainer.appendChild(botMessageElement);
+
+                        document.getElementById("chat-messages").appendChild(botMessageContainer);
+                        const chatMessages = document.getElementById("chat-messages");
+                        chatMessages.scrollTop = chatMessages.scrollHeight;
+                    }, 1000);
+                }
+
+                messageInput.value = ""; // Limpa o campo de mensagem
+                const chatMessages = document.getElementById("chat-messages");
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+        }
+
+        function getResponse(userMessage) {
+            userMessage = userMessage.toLowerCase();
+            if (userMessage.includes("olá") || userMessage.includes("oi")) {
+                return "Olá! Como posso ajudá-lo hoje?";
+            } else if (userMessage.includes("tudo bem") || userMessage.includes("como vai")) {
+                return "Estou bem, obrigado por perguntar! E você?";
+            } else if (userMessage.includes("problema") || userMessage.includes("ajuda")) {
+                return "Qual é o problema? Vou tentar ajudar.";
+            }else if (userMessage.includes("você é feio") || userMessage.includes("ajuda")) {
+                return " voce é mais";
+            } else {
+                return "Desculpe, não entendi sua mensagem.";
+            }
+        }
+    </script>
+
+</body>
+</html>
