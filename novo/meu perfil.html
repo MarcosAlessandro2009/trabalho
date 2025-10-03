@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fc;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .profile-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e4e7ec;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        .profile-header h1 {
+            font-size: 24px;
+            color: #333;
+        }
+        .profile-header button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .profile-header button:hover {
+            background-color: #45a049;
+        }
+        .profile-info {
+            display: flex;
+            justify-content: space-between;
+        }
+        .profile-info div {
+            width: 48%;
+        }
+        .profile-info label {
+            font-size: 14px;
+            color: #555;
+        }
+        .profile-info input, .profile-info select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .profile-info input[type="file"] {
+            padding: 0;
+        }
+        .profile-photo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile-photo img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .profile-photo button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .profile-photo button:hover {
+            background-color: #45a049;
+        }
+        .footer {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+        .footer button {
+            background-color: #02888c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .footer button:hover {
+            background-color: #027a7c;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="profile-header">
+        <h1>Meu Perfil</h1>
+        <div>
+            <button>Voltar</button>
+            <button>Salvar alterações</button>
+        </div>
+    </div>
+
+    <h2>Olá,</h2>
+    <p>Aqui você poderá editar suas informações básicas e profissionais.</p>
+
+    <div class="profile-info">
+        <!-- Informações básicas -->
+        <div>
+            <h3>Informações básicas</h3>
+            <label for="name">Nome</label>
+            <input type="text" id="name" value="Vivian Oliveira">
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" value="vivian.oliveira@stiltlingue.com.br">
+
+            <label for="current-password">Senha atual</label>
+            <input type="password" id="current-password">
+
+            <label for="new-password">Senha nova</label>
+            <input type="password" id="new-password">
+
+            <label for="repeat-password">Repetir senha nova</label>
+            <input type="password" id="repeat-password">
+        </div>
+
+        <!-- Informações profissionais -->
+        <div>
+            <h3>Informações profissionais</h3>
+            <label for="department">Departamento</label>
+            <select id="department">
+                <option value="logistica" selected>Logística</option>
+                <option value="marketing">Marketing</option>
+                <option value="rh">Recursos Humanos</option>
+            </select>
+
+            <label for="job-title">Cargo</label>
+            <select id="job-title">
+                <option value="analista-comunicacao" selected>Analista de Comunicação</option>
+                <option value="gerente-marketing">Gerente de Marketing</option>
+                <option value="coordenador-logistica">Coordenador Logística</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Foto de perfil -->
+    <div class="profile-photo">
+        <img src="https://via.placeholder.com/120" alt="Foto de perfil">
+        <button>Trocar foto</button>
+        <p>Você pode enviar imagens em formato JPG ou PNG. O tamanho não deve ultrapassar 5MB.</p>
+    </div>
+
+    <div class="footer">
+        <button>Voltar</button>
+        <button>Salvar alterações</button>
+    </div>
+</div>
+
+</body>
+</html>

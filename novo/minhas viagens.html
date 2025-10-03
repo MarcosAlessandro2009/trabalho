@@ -1,0 +1,265 @@
+<html>
+<title> minha pagina com menu </title>
+
+<style>
+
+body{
+
+    font-family: Arial, sans-serif;
+            margin: 30;
+            padding: 30;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+
+
+        header {
+            background-color:rgb(2, 136, 156);
+            padding: 1rem;
+            color: white;
+            text-align: center;
+        }
+
+
+
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #ddd;
+        }
+
+        /* Estilos para o conteúdo principal */
+        main {
+            flex: 1; /* Faz com que o conteúdo principal ocupe o espaço restante */
+            padding: 2rem;
+            text-align: center;
+        }
+
+        /* Estilos para o rodapé */
+        footer {
+            background-color: #f0f0f0;
+            padding: 2rem;
+            text-align: center;
+            color: #555;
+        }
+
+        .footer-photos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Permite que as fotos quebrem a linha em telas menores */
+            gap: 15px; /* Espaço entre as fotos */
+            margin-top: 20px;
+        }
+
+        .footer-photos img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
+            border-radius: 8px; /* Cantos arredondados */
+            box-shadow: 0 4px 8px rgb(2, 133, 156); /* Sombra para dar profundidade */
+            transition: transform 0.3s;
+        }
+
+        .footer-photos img:hover {
+            transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+        }
+
+        footer p {
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        .logo{
+            width: 70px;
+            height: 70px;
+
+
+
+
+
+        }
+
+        .conteiner{
+            display: flex;
+            margin-left: 25%;
+        }
+
+        .lado-a-lado{
+            display: flex;
+        }
+
+        .pacotes{
+            padding: 20px;
+        }
+
+        .gastronomica{
+            padding: 20px;
+        }
+
+        .romantica{
+            padding: 20px;
+        }
+        
+        .turisticas{
+            padding: 20px;
+        }
+
+        .pacotes{
+
+           color: black;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+        }
+       
+        .promoções{
+            color: black;
+            font-size: 30px; 
+    font-family: Arial, sans-serif; 
+
+  
+    
+  
+        }
+       
+        .grid{
+            display: flex;
+        }
+
+        .ajuda-img{
+            width: 100px;
+        }
+
+        .tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+            
+            
+            
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">ajuda</a></li>
+                <li><a href="#">minhas viagens</a></li>
+                <li><a href="#">decole conosco </a></li>
+                <li><a href="#"> meu perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2>Passadas</h2>
+    
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+      </div>
+      
+      <div id="London" class="tabcontent">
+        <h3>London</h3>
+        <p>valor gasto: R$ 10,000 
+     
+        </p>
+      </div>
+      
+      <div id="Paris" class="tabcontent">
+        <h3>Paris</h3>
+        <p>Valor gasto: R$ 18,000</p> 
+      </div>
+      
+      <div id="Tokyo" class="tabcontent">
+        <h3>Tokyo</h3>
+        <p>Valor gasto: R$ 17,000</p>
+    </div>
+    
+    
+            <h2>Favoritas</h2>
+
+            <a> nenhuma viagem favoritada</a>
+      
+
+
+    <footer>
+
+        <p>&copy; 2025 Minha Empresa. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+<script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    </script>
+
+
+</html>

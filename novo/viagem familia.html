@@ -1,0 +1,302 @@
+<html>
+<title> minha pagina com menu </title>
+
+<style>
+    body {
+
+        font-family: Arial, sans-serif;
+        margin: 30;
+        padding: 30;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+
+
+    header {
+        background-color: rgb(2, 136, 156);
+        padding: 1rem;
+        color: white;
+        text-align: center;
+    }
+
+
+
+    header nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    header nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2rem;
+        transition: color 0.3s;
+    }
+
+    header nav a:hover {
+        color: #ddd;
+    }
+
+    /* Estilos para o conteúdo principal */
+    main {
+        flex: 1;
+        /* Faz com que o conteúdo principal ocupe o espaço restante */
+        padding: 2rem;
+        text-align: center;
+    }
+
+    /* Estilos para o rodapé */
+    footer {
+        background-color: #f0f0f0;
+        padding: 2rem;
+        text-align: center;
+        color: #555;
+    }
+
+    .footer-photos {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        /* Permite que as fotos quebrem a linha em telas menores */
+        gap: 15px;
+        /* Espaço entre as fotos */
+        margin-top: 20px;
+    }
+
+    .footer-photos img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        /* Garante que a imagem preencha o espaço sem distorção */
+        border-radius: 8px;
+        /* Cantos arredondados */
+        box-shadow: 0 4px 8px rgb(2, 133, 156);
+        /* Sombra para dar profundidade */
+        transition: transform 0.3s;
+    }
+
+    .footer-photos img:hover {
+        transform: scale(1.05);
+        /* Efeito de zoom ao passar o mouse */
+    }
+
+    footer p {
+        margin-top: 20px;
+        font-size: 0.9rem;
+    }
+
+    .logo {
+        width: 70px;
+        height: 70px;
+
+
+
+
+
+    }
+
+    .conteiner {
+        display: flex;
+        margin-left: 25%;
+    }
+
+    .lado-a-lado {
+        display: flex;
+    }
+
+    .pacotes {
+        padding: 20px;
+    }
+
+    .gastronomica {        cursor: pointer;
+
+    }
+
+    .romantica {
+        padding: 20px;
+    }
+
+    .turisticas {
+        padding: 20px;
+    }
+
+    .pacotes {
+
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+    }
+
+    .promoções {
+        color: black;
+        font-size: 30px;
+        font-family: Arial, sans-serif;
+
+
+
+
+    }
+
+    .grid {
+        display: flex;
+    }
+
+    .ajuda-img {
+        width: 100px;
+    }
+    
+    .card {
+        transition: 0.3s;
+        width: 200px;
+        padding: 30px;
+        cursor: pointer;
+    }
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.459);
+        background-color: #555;
+    }
+
+    .grid-card{
+        display: flex;
+    }
+
+</style>
+</head>
+
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">ajuda</a></li>
+                <li><a href="#">minhas viagens</a></li>
+                <li><a href="#">decole conosco </a></li>
+                <li><a href="#"> meu perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="grid-card">
+
+        
+       <div class="card">
+            <img src="https://tagramado.com.br/wp-content/uploads/2021/05/gramado-e1639009521617.jpg" alt="Avatar"
+            style="width:100%">
+            <h4><b>Gramado</b></h4>
+            <p>ida e volta</p>
+            <p>5 dias</p>
+        </div>
+        
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbgTXz31KshkyB3ZSYlf31C-ZZJcnNMJL2eA&s"
+            Avatar" style="width:100%">
+            <h4><b>Nordeste</b></h4>
+            <p>ida e volta</p>
+            <p>5 dias</p>
+            <p></p>
+        </div>
+        
+        <div class="card">
+            <img src="https://ensin-e.edu.br/wp-content/uploads/2021/03/080c96b6-12f4-465c-8c82-5418c5f81b98_piramides-do-egito-450x305-1.jpg"
+            Avatar " style="width:100%">
+            <h4><b>Egito</b></h4>
+            <p>ida e volta</p>
+            <p>5 dias</p>
+            <p></p>
+        </div>
+        
+        
+        <div class="card">
+            <img src="https://matuete.com/?p=5854" Avatar" style="width:100%">
+            <h4><b>Fernando de Noronha</b></h4>
+            <p>ida e volta</p>
+            <p>5 dias</p>
+            <p></p>
+        </div>
+        
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKnEihAMTMDXucoz50VfXpn-kIfUSUP0p3Bg&s"
+            alt="Avatar" style="width:100%">
+            <h4><b>Estados Unidos, Orlando</b></h4>
+            <p>ida e volta</p>
+            <p>14 dias</p>
+            <p></p>
+        </div> 
+        
+        <div class="card">
+            <img src="https://www.agoda.com/wp-content/uploads/2019/03/tokyo-cover.jpg" alt="Avatar"
+            style="width:100%">
+            <h4><b>Tpkyo, Japão</b></h4>
+            <p>ida e volta</p>
+            <p>12 dias</p>
+            <p></p>
+        </div>
+
+        <div class="card">
+            <img src="https://tagramado.com.br/wp-content/uploads/2021/05/gramado-e1639009521617.jpg" alt="Avatar"
+            style="width:100%">
+            <h4><b>Aparecida do Norte</b></h4>
+            <p>ida e volta</p>
+            <p>5 dias</p>
+            <p></p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx2_XCKRFq2kiT36d-BHtPoC5r0tXqD8FjJg&s" alt="Avatar"
+            style="width:100%">
+            <h4><b>Praia do Forte</b></h4>
+            <p>ida e volta</p>
+            <p>5 dias</p>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Lisbon_%2836831596786%29_%28cropped%29.jpg/330px-Lisbon_%2836831596786%29_%28cropped%29.jpg" alt="Avatar"
+            style="width:100%">
+            <h4><b>Rio de janeiro</b></h4> 
+            <p>ida e volta</p>
+            <p>7 dias</p>
+        </div>
+
+    </div>
+    </div>
+    
+    <footer>
+        
+        <p>&copy; 2025 Minha Empresa. Todos os direitos reservados.</p>
+    </footer>
+    
+</body>
+
+</html>
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
