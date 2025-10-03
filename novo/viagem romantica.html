@@ -1,0 +1,302 @@
+<html>
+<title> minha pagina com menu </title>
+
+<style>
+    body {
+
+        font-family: Arial, sans-serif;
+        margin: 30;
+        padding: 30;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+
+
+    header {
+        background-color: rgb(2, 136, 156);
+        padding: 1rem;
+        color: white;
+        text-align: center;
+    }
+
+
+
+    header nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    header nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2rem;
+        transition: color 0.3s;
+    }
+
+    header nav a:hover {
+        color: #ddd;
+    }
+
+    /* Estilos para o conteúdo principal */
+    main {
+        flex: 1;
+        /* Faz com que o conteúdo principal ocupe o espaço restante */
+        padding: 2rem;
+        text-align: center;
+    }
+
+    /* Estilos para o rodapé */
+    footer {
+        background-color: #f0f0f0;
+        padding: 2rem;
+        text-align: center;
+        color: #555;
+    }
+
+    .footer-photos {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        /* Permite que as fotos quebrem a linha em telas menores */
+        gap: 15px;
+        /* Espaço entre as fotos */
+        margin-top: 20px;
+    }
+
+    .footer-photos img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        /* Garante que a imagem preencha o espaço sem distorção */
+        border-radius: 8px;
+        /* Cantos arredondados */
+        box-shadow: 0 4px 8px rgb(2, 133, 156);
+        /* Sombra para dar profundidade */
+        transition: transform 0.3s;
+    }
+
+    .footer-photos img:hover {
+        transform: scale(1.05);
+        /* Efeito de zoom ao passar o mouse */
+    }
+
+    footer p {
+        margin-top: 20px;
+        font-size: 0.9rem;
+    }
+
+    .logo {
+        width: 70px;
+        height: 70px;
+
+
+
+
+
+    }
+
+    .conteiner {
+        display: flex;
+        margin-left: 25%;
+    }
+
+    .lado-a-lado {
+        display: flex;
+    }
+
+    .pacotes {
+        padding: 20px;
+    }
+
+    .gastronomica {        cursor: pointer;
+
+    }
+
+    .romantica {
+        padding: 20px;
+    }
+
+    .turisticas {
+        padding: 20px;
+    }
+
+    .pacotes {
+
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+    }
+
+    .promoções {
+        color: black;
+        font-size: 30px;
+        font-family: Arial, sans-serif;
+
+
+
+
+    }
+
+    .grid {
+        display: flex;
+    }
+
+    .ajuda-img {
+        width: 100px;
+    }
+    
+    .card {
+        transition: 0.3s;
+        width: 200px;
+        padding: 30px;
+        cursor: pointer;
+    }
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.459);
+        background-color: #555;
+    }
+
+    .grid-card{
+        display: flex;
+    }
+
+</style>
+</head>
+
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">ajuda</a></li>
+                <li><a href="#">minhas viagens</a></li>
+                <li><a href="#">decole conosco </a></li>
+                <li><a href="#"> meu perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="grid-card">
+
+        
+       <div class="card">
+            <img src="https://www.cvc.com.br/dicas-de-viagem/wp-content/uploads/2019/12/ilhabela-sp.jpg" alt="Avatar"
+            style="width:100%">
+            <h4><b>Ilhabela</b></h4>
+            <p>ida e volta</p>
+            <p>9 dias</p>
+        </div>
+        
+        <div class="card">
+            <img src="https://dicadagrecia.com.br/wp-content/uploads/sites/24/2020/10/grecia-santorini-jpg.webp"
+            Avatar" style="width:100%">
+            <h4><b>Santorini</b></h4>
+            <p>ida e volta</p>
+            <p>8 dias</p>
+            <p></p>
+        </div>
+        
+        <div class="card">
+            <img src="https://media.staticontent.com/media/pictures/9804ef39-84a4-4011-9d10-7566f9c92945"
+            Avatar " style="width:100%">
+            <h4><b>Gramado</b></h4>
+            <p>ida e volta</p>
+            <p>10 dias</p>
+            <p></p>
+        </div>
+        
+        
+        <div class="card">
+            <img src="https://content.r9cdn.net/rimg/dimg/cb/31/6a7e39dd-city-52540-1672c4dda93.jpg?width=1366&height=768&xhint=1710&yhint=1354&crop=true" Avatar" style="width:100%">
+            <h4><b>Fernando de Noronha</b></h4>
+            <p>ida e volta</p>
+            <p>10 dias</p>
+            <p></p>
+        </div>
+        
+        <div class="card">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/5b/46/0a/caption.jpg?w=500&h=400&s=1"
+            alt="Avatar" style="width:100%">
+            <h4><b>Bruges</b></h4>
+            <p>ida e volta</p>
+            <p>10 dias</p>
+            <p></p>
+        </div> 
+        
+        <div class="card">
+            <img src="https://media.staticontent.com/media/pictures/befacf17-5ae4-4d8c-97ff-ec11735af510" alt="Avatar"
+            style="width:100%">
+            <h4><b>Porto de Galinha</b></h4>
+            <p>ida e volta</p>
+            <p>10 dias</p>
+            <p></p>
+        </div>
+
+        <div class="card">
+            <img src="https://www.voltologo.net/wp-content/uploads/2019/03/o-que-fazer-em-jericoacoara-dicas.jpg.webp" alt="Avatar"
+            style="width:100%">
+            <h4><b>Jericoacoara</b></h4>
+            <p>ida e volta</p>
+            <p>10 dias</p>
+            <p></p>
+        </div>
+
+        <div class="card">
+            <img src="https://imgmd.net/images/v1/guia/1699207/ouro-preto-206-c.jpg" alt="Avatar"
+            style="width:100%">
+            <h4><b>Ouro Preto</b></h4>
+            <p>ida e volta</p>
+            <p>10 dias</p>
+        </div>
+
+        <div class="card">
+            <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2020/12/quanto-custa-viajar-maldivas-capa2019-01.jpg" alt="Avatar"
+            style="width:100%">
+            <h4><b>Maldivas</b></h4> 
+            <p>ida e volta</p>
+            <p>10 dias</p>
+        </div>
+
+    </div>
+    </div>
+    
+    <footer>
+        
+        <p>&copy; 2025 Minha Empresa. Todos os direitos reservados.</p>
+    </footer>
+    
+</body>
+
+</html>
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
