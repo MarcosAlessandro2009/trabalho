@@ -1,5 +1,5 @@
 <html>
-<title> minha pagina com menu </title>
+<title> Página Inicial </title>
 
 <style>
     body {
@@ -406,8 +406,11 @@
 </html>
 
         </div>
+        <hr class="divider">
+
         <div class="promoções">
             <h3> Promoções </h3>
+            
             <br>
 
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgc6fojHlybkERWJ3kuAMq8WrEJB3erY4MSQ&s">
@@ -431,6 +434,8 @@
 
 
         </div>
+        <hr class="divider">
+
         <h1> pacotes de viagens mais buscados</h1>
         <h4> parcele em até 10 vezes sem juros</h4>
 
@@ -477,9 +482,12 @@
 </div>
 
 
-</div>
+</div>  
 
 <div class=" nacionais ">
+
+  <hr class="divider">
+
 
     <h1> Trechos nacionais mais buscados </h1>
 
@@ -502,8 +510,13 @@
       .container {
         display: flex;
         gap: 20px;
-        flex-wrap: wrap;
-        justify-content: center;
+      }
+
+      .button-pay{
+        padding: 5px;
+        background-color: #4caf50;
+        color: white;
+        border-radius: 4px;
       }
   
       .card {
@@ -516,6 +529,13 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        transition: 0.5s;
+        cursor: pointer;  
+      }
+
+      .card:hover{
+        box-shadow: 0 3px 9px rgba(0, 0, 0, 0.582);
+        transition: 0.5s;
       }
   
       .card img {
@@ -566,7 +586,7 @@
   </head>
   <body>
   
-    <div class="container">
+    <div class="container"> <!-- div do carrossel -->
       <!-- Voo Rio de Janeiro -->
       <div class="card">
         <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Gol_logo_2015.svg" alt="Gol">
@@ -622,11 +642,40 @@
           <p>Qua. 4 fev. 2026</p>
           <p class="price">Preço por pessoa a partir de R$ 1.164</p>
         </div>
+
+                <!-- Voo Fortaleza -->
+                <div class="card">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Logo_Azul_2020.svg" alt="Azul">
+                  <div class="stops">Paradas</div>
+                  <h3>Voo a Fortaleza</h3>
+                  <div class="flight-details">
+                    <p>Ida: CGH - FOR</p>
+                    <p>Volta: FOR - GRU</p>
+                  </div>
+                  <p>Qua. 28 jan. 2026</p>
+                  <p>Qua. 4 fev. 2026</p>
+                  <p class="price">Preço por pessoa a partir de R$ 1.164</p>
+                </div>
+
+                  <!-- Voo Fortaleza -->
+        <div class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Logo_Azul_2020.svg" alt="Azul">
+          <div class="stops">Paradas</div>
+          <h3>Voo a Fortaleza</h3>
+          <div class="flight-details">
+            <p>Ida: CGH - FOR</p>
+            <p>Volta: FOR - GRU</p>
+          </div>
+          <p>Qua. 28 jan. 2026</p>
+          <p>Qua. 4 fev. 2026</p>
+          <p class="price">Preço por pessoa a partir de R$ 1.164</p>
+          <div class="button-pay">Viajar</div>
+        </div>
       </div>
     
     </body>
     
-        </div class> 
+    </div> 
   
 
 
