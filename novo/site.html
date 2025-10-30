@@ -1,0 +1,907 @@
+<html>
+<title> Página Inicial </title>
+
+<style>
+    body {
+
+        font-family: Arial, sans-serif;
+        margin: 30;
+        padding: 30;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    header nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    header nav a {
+        color: rgb(2, 136, 156);
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2rem;
+        transition: color 0.3s;
+    }
+
+    header nav a:hover {
+        color: #ddd;
+    }
+
+    /* Estilos para o conteúdo principal */
+    main {
+        flex: 1;
+        /* Faz com que o conteúdo principal ocupe o espaço restante */
+        padding: 2rem;
+        text-align: center;
+    }
+
+    /* Estilos para o rodapé */
+    footer {
+        background-color: #f0f0f0;
+        padding: 2rem;
+        text-align: center;
+        color: #555;
+    }
+
+    .footer-photos {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        /* Permite que as fotos quebrem a linha em telas menores */
+        gap: 15px;
+        /* Espaço entre as fotos */
+        margin-top: 20px;
+    }
+
+    .footer-photos img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        /* Garante que a imagem preencha o espaço sem distorção */
+        border-radius: 8px;
+        /* Cantos arredondados */
+        box-shadow: 0 4px 8px rgb(2, 133, 156);
+        /* Sombra para dar profundidade */
+        transition: transform 0.3s;
+    }
+
+    .footer-photos img:hover {
+        transform: scale(1.05);
+        /* Efeito de zoom ao passar o mouse */
+    }
+
+    footer p {
+        margin-top: 20px;
+        font-size: 0.9rem;
+    }
+
+    .logo {
+        width: 70px;
+        height: 70px;
+
+
+
+
+
+    }
+
+    .conteiner {
+        display: flex;
+        margin-left: 25%;
+    }
+
+    .lado-a-lado {
+        display: flex;
+    }
+
+
+
+    .gastronomica {
+        padding: 20px;
+    }
+
+    .familia {
+        padding: 20px;
+    }
+
+    .romantica {
+        padding: 20px;
+    }
+
+    .turistica {
+        padding: 20px;
+    }
+
+    .pacotes {
+
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+    }
+
+    .promoções {
+        color: black;
+        font-size: 30px;
+        font-family: Arial, sans-serif;
+        padding-bottom: 100px;
+    }
+
+    .promoções img {
+        width: 180px;
+        border-radius: 20px;
+        transition: 0.5s;
+    }
+
+    .promoções img:hover {
+        width: 220px;
+        border-radius: 20px;
+        transition: 0.5s;
+    }
+
+    .mais_buscados img:hover {
+        width: 220px;
+        transition: 0.5s;
+    }
+
+    .mais_buscados img {
+        width: 180px;
+        transition: 0.5s;
+    }
+
+    .mais_buscados {
+        display: flex;
+    }
+
+    .mais_buscados div {
+        padding: 30px;
+    }
+
+
+    footer {
+        background-color: #f0f0f0;
+        padding: 2rem;
+        text-align: center;
+        color: #555;
+    }
+</style>
+</head>
+
+<body>
+
+
+    <!DOCTYPE html>
+    <html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Best trip</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            body {
+                margin: 0;
+                font-family: "Arial", sans-serif;
+                background: #fff;
+                color: #000;
+            }
+
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 20px;
+            }
+
+            .logo img {
+                width: 100px;
+            }
+
+            nav {
+                display: flex;
+                background: #dbdbdb;
+                border-radius: 5px;
+                overflow: hidden;
+                align-items: center;
+            }
+
+            nav a {
+                text-decoration: none;
+                color: #333;
+                font-size: 16px;
+                padding: 12px 25px;
+                border-right: 1px solid #bbb;
+            }
+
+            nav a:first-child {
+                background: #e7e7e7;
+            }
+
+            nav a:last-of-type {
+                border-right: none;
+            }
+
+            .menu-icon {
+                padding: 10px 15px;
+            }
+
+            .menu-icon img {
+                width: 24px;
+            }
+
+            .search {
+                text-align: center;
+                margin: 10px 0 25px;
+            }
+
+            .search input {
+                width: 320px;
+                padding: 12px 12px 12px 38px;
+                font-size: 15px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                background: #fff url("https://img.icons8.com/color/48/marker.png") no-repeat 10px center;
+                background-size: 20px;
+            }
+
+            .icons {
+                display: flex;
+                justify-content: space-around;
+                text-align: center;
+                padding: 10px 15px 20px;
+            }
+
+            .icons div {
+                flex: 1;
+            }
+
+            .icons img {
+                width: 40px;
+                margin-bottom: 5px;
+            }
+
+            .icons p {
+                margin: 0;
+                font-size: 13px;
+                font-weight: bold;
+                line-height: 1.3;
+            }
+
+            .divider {
+                border: none;
+                border-top: 4px solid #007c91;
+                margin: 0 0 20px;
+            }
+
+            .passeios {
+                display: flex;
+                justify-content: space-around;
+                padding: 0 15px 25px;
+                gap: 15px;
+            }
+
+            .passeios div {
+                flex: 1;
+                position: relative;
+                border-radius: 6px;
+                overflow: hidden;
+            }
+
+            .passeios img {
+                width: 100%;
+                height: 120px;
+                object-fit: cover;
+                display: block;
+            }
+
+            .passeios span {
+                position: absolute;
+                bottom: 10px;
+                left: 0;
+                right: 0;
+                text-align: center;
+                font-size: 15px;
+                font-weight: bold;
+                color: #fff;
+                text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+            }
+
+            @media (max-width: 768px) {
+                .passeios {
+                    flex-direction: column;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="logo">
+                <img src="https://i.imgur.com/hMzFr1n.png" alt="Logo Best Trip">
+            </div>
+
+            <nav>
+                <a href="file:///media/archive/trabalho-main.zip/trabalho-main/novo/ajuda.html">ajuda</a>
+                <a href="file:///media/archive/trabalho-main.zip/trabalho-main/novo/minhas%20viagens.html">minhas
+                    viagens</a>
+                <a href="file:///media/archive/trabalho-main.zip/trabalho-main/novo/minhas%20viagens.html">decole
+                    conosco</a>
+                <a href="file:///media/archive/trabalho-main.zip/trabalho-main/novo/meu%20perfil.html">meu perfil</a>
+
+                </div>
+            </nav>
+        </header>
+
+        <div class="search">
+            <input type="text" placeholder="coloque seu destino">
+        </div>
+
+        <div class="icons">
+            <div>
+                <a href="file:///media/archive/trabalho-main.zip/trabalho-main/novo/posto%20mais%20proximo.html"
+                    style="color: black; text-decoration: none;">
+                    <img src="https://img.icons8.com/ios-filled/50/car.png" alt="Posto mais próximo">
+                    <p>posto mais<br>próximo</p>
+                </a>
+            </div>
+            <div>
+                <a href="file:///media/archive/trabalho-main.zip/trabalho-main/novo/proxima%20parada.html"
+                    style="color: black; text-decoration: none;">
+                    <img src="https://img.icons8.com/ios-filled/50/home.png" alt="Próxima parada">
+                    <p>próxima<br>parada</p>
+                </a>
+            </div>
+            <div>
+                <a href="file:///media/archive/trabalho-main.zip/trabalho-main/novo/gps.html"
+                    style="color: black; text-decoration: none;">
+                    <img src="https://img.icons8.com/ios-filled/50/marker.png" alt="GPS">
+                    <p>gps</p>
+                </a>
+            </div>
+            <div>
+                <a href="file:///media/archive/trabalho-main.zip/trabalho-main/novo/radar.html"
+                    style="color: black; text-decoration: none;">
+                    <img src="https://img.icons8.com/ios-filled/50/radar.png" alt="Radar">
+                    <p>radar</p>
+                </a>
+            </div>
+            <div>
+                <a href="file:///media/archive/trabalho-main.zip/trabalho-main/novo/policia%20e%20corpo%20de%20bombeiros.html"
+                    style="color: black; text-decoration: none;">
+                    <img src="https://img.icons8.com/ios-filled/50/policeman-male.png" alt="Polícia">
+                    <p>policia<br>corpo de bombeiros</p>
+                </a>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <div class="passeios">
+            <div>
+                <a href="file:///media/archive/trabalho-main.zip/trabalho-main/novo/viagem%20romantica.html"
+                    style="color: black; text-decoration: none;">
+                    <img src="https://nxboats.com.br/wp-content/uploads/2024/04/casamento-na-lancha.jpg"
+                        alt="Romântico">
+                </a>
+                <span>passeio romântico</span>
+            </div>
+            <div>
+                <a href="file:///media/archive/trabalho-main.zip/trabalho-main/viagem%20gastronomica.html"
+                    style="color: black; text-decoration: none;">
+                    <img src="https://blog.assistentedeviagem.com.br/wp-content/uploads/2023/09/tour-gastronomico-.jpg"
+                        alt="Gastronômico">
+                </a>
+                <span>passeio gastronômico</span>
+            </div>
+            <div>
+                <a href="file:///media/archive/trabalho-main.zip/trabalho-main/novo/viagem%20familia.html"
+                    style="color: black; text-decoration: none;">
+                    <img src="https://eliteresorts.com.br/blog/wp-content/uploads/os-melhores-lugares-para-viagem-em-famlia.jpg"
+                        alt="Família">
+                </a>
+                <span>passeio em família</span>
+            </div>
+            <div>
+                <a href="file:///media/archive/trabalho-main.zip/trabalho-main/novo/viagensturisticas.html"
+                    style="color: black; text-decoration: none;">
+                    <img src="https://ddrio.com/wp-content/uploads/2025/01/foto_fim_de_tarde_visto_num_passeio_da_ddrio-1200x675.jpg"
+                        alt="Turístico">
+                </a>
+                <span>passeio turístico</span>
+            </div>
+        </div>
+
+    </body>
+
+    </html>
+
+    </div>
+    <hr class="divider">
+
+    <div class="promoções">
+        <h3> Promoções </h3>
+
+        <br>
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgc6fojHlybkERWJ3kuAMq8WrEJB3erY4MSQ&s">
+
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWfQqh8VZiPN_SBDOcOwzJdfJVwgYY0lbYvg&s">
+
+
+
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx1e9ag6tUMAf7vT48e3Xq8tPq3pxMfZKS4w&s">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc73bw0v1rwYOXqLg5yANtiRE-Gv73Hx73lw&s">
+
+        <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgFibitVjCa1nq8Y8J8_wUtaFXEPGF18h2lQg31W_OOX2LTJRKRJkKRRAeGQPuOzI9jNo&usqp=CAU">
+
+        <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfKbezBfxKxp1Fy-Gz5MkPg7v3mDIXOcoB6n8TcKKkPudxlUkeE_BFXqI7qKJ7wagtpr4&usqp=CAU">
+
+
+
+
+
+    </div>
+    <hr class="divider">
+
+    <h1> pacotes de viagens mais buscados</h1>
+    <h4> parcele em até 10 vezes sem juros</h4>
+
+    <div class="mais_buscados">
+
+
+        <div>
+
+
+            <img src="https://media.staticontent.com/media/pictures/5272c22e-c0fd-41f6-b0ee-bd3aedb0c2e7/300x200">
+            <h3>Rio de Janeiro</h3>
+            <h3> R$1.638</h3>
+            <h5> hotel+aéreo/por pessoa | 10 dias </h5>
+
+        </div>
+
+        <div>
+
+
+            <img src="https://media.staticontent.com/media/pictures/e7d7630d-a284-48b2-adbe-4f9101d8fff1/300x200">
+            <h3>Maceió</h3>
+            <h3> R$1813</h3>
+            <h5> hotel+aéreo/ por pessoa | 8 dias</p>
+            </h5>
+
+        </div>
+
+
+        <div>
+
+            <img src="https://media.staticontent.com/media/pictures/aa88664d-2ada-431b-959c-7e56d227d9d7/300x200">
+            <h3>Porto Seguro</h3>
+            <h3> R$1.645</h3>
+            <h5>hotel+aéreo/ por pessoa | 9 dias</h5>
+        </div>
+
+
+        <div>
+
+
+            <img src="https://media.staticontent.com/media/pictures/9eb19f42-8309-4607-9097-78db7ec9790b/300x200">
+            <h3>Natal</h3>
+            <h3> R$2.441</h3>
+            <h5> hotel+aéreo/ por pessoa | 11 dias</h5>
+        </div>
+
+
+    </div>
+
+    <div class=" nacionais ">
+
+        <hr class="divider">
+
+
+        <h1> Trechos nacionais mais buscados </h1>
+
+    </div>
+
+    <div class=" trechos_nacionais" <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Voos</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Inter', sans-serif;
+                display: flex;
+                justify-content: center;
+                padding: 20px;
+            }
+
+            .container {
+                display: flex;
+                gap: 20px;
+            }
+
+            .button-pay {
+                padding: 5px;
+                background-color: #4caf50;
+                color: white;
+                border-radius: 4px;
+            }
+
+            .card {
+                background-color: #fff;
+                border: 1px solid #e0e0e0;
+                border-radius: 8px;
+                width: 250px;
+                padding: 20px;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                transition: 0.5s;
+                cursor: pointer;
+            }
+
+            .card:hover {
+                box-shadow: 0 3px 9px rgba(0, 0, 0, 0.582);
+                transition: 0.5s;
+            }
+
+            .card img {
+                width: 50px;
+                margin-bottom: 10px;
+            }
+
+            .card h3 {
+                font-size: 18px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+
+            .card p {
+                font-size: 14px;
+                margin: 5px 0;
+            }
+
+            .price {
+                font-size: 16px;
+                font-weight: 600;
+                color: #2e7d32;
+                margin-top: 15px;
+            }
+
+            .direct {
+                background-color: #4caf50;
+                color: white;
+                padding: 5px 10px;
+                border-radius: 4px;
+                margin-bottom: 10px;
+            }
+
+            .stops {
+                background-color: #f44336;
+                color: white;
+                padding: 5px 10px;
+                border-radius: 4px;
+                margin-bottom: 10px;
+            }
+
+            .flight-details {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+        </style>
+        </head>
+
+        <body>
+
+
+            <div>
+
+
+                <div class="container"> <!-- div do carrossel -->
+                    <!-- Voo Rio de Janeiro -->
+                    <div class="card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Gol_logo_2015.svg" alt="Gol">
+                        <div class="direct">Direto</div>
+                        <h3>Voo a Rio de Janeiro</h3>
+                        <div class="flight-details">
+                            <p>Ida: VCP - GIG</p>
+                            <p>Volta: GIG - VCP</p>
+                        </div>
+                        <p>Ter. 4 nov. 2025</p>
+                        <p>Dom. 9 nov. 2025</p>
+                        <p class="price">Preço por pessoa a partir de R$ 394</p>
+                    </div>
+
+                    <!-- Voo Recife -->
+                    <div class="card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Logo_Azul_2020.svg" alt="Azul">
+                        <div class="direct">Direto</div>
+                        <h3>Voo a Recife</h3>
+                        <div class="flight-details">
+                            <p>Ida: CGH - REC</p>
+                            <p>Volta: REC - CGH</p>
+                        </div>
+                        <p>Qui. 12 mar. 2026</p>
+                        <p>Qua. 25 mar. 2026</p>
+                        <p class="price">Preço por pessoa a partir de R$ 894</p>
+                    </div>
+
+                    <!-- Voo Salvador -->
+                    <div class="card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Gol_logo_2015.svg" alt="Gol">
+                        <div class="direct">Direto</div>
+                        <h3>Voo a Salvador</h3>
+                        <div class="flight-details">
+                            <p>Ida: GRU - SSA</p>
+                            <p>Volta: SSA - GRU</p>
+                        </div>
+                        <p>Sex. 5 dez. 2025</p>
+                        <p>Sex. 19 dez. 202
+                        <p class="price">Preço por pessoa a partir de R$ 986</p>
+                    </div>
+
+                    <!-- Voo Fortaleza -->
+                    <div class="card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Logo_Azul_2020.svg" alt="Azul">
+                        <div class="stops">Paradas</div>
+                        <h3>Voo a Fortaleza</h3>
+                        <div class="flight-details">
+                            <p>Ida: CGH - FOR</p>
+                            <p>Volta: FOR - GRU</p>
+                        </div>
+                        <p>Qua. 28 jan. 2026</p>
+                        <p>Qua. 4 fev. 2026</p>
+                        <p class="price">Preço por pessoa a partir de R$ 1.164</p>
+                    </div>
+
+                    <!-- Voo Fortaleza -->
+                    <div class="card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Logo_Azul_2020.svg" alt="Azul">
+                        <div class="stops">Paradas</div>
+                        <h3>Voo a Fortaleza</h3>
+                        <div class="flight-details">
+                            <p>Ida: CGH - FOR</p>
+                            <p>Volta: FOR - GRU</p>
+                        </div>
+                        <p>Qua. 28 jan. 2026</p>
+                        <p>Qua. 4 fev. 2026</p>
+                        <p class="price">Preço por pessoa a partir de R$ 1.164</p>
+                    </div>
+
+                    <!-- Voo Fortaleza -->
+                    <div class="card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Logo_Azul_2020.svg" alt="Azul">
+                        <div class="stops">Paradas</div>
+                        <h3>Voo a Fortaleza</h3>
+                        <div class="flight-details">
+                            <p>Ida: CGH - FOR</p>
+                            <p>Volta: FOR - GRU</p>
+                        </div>
+                        <p>Qua. 28 jan. 2026</p>
+                        <p>Qua. 4 fev. 2026</p>
+                        <p class="price">Preço por pessoa a partir de R$ 1.164</p>
+                        <div class="button-pay">Viajar</div>
+                    </div>
+                    
+                </div>
+
+
+
+
+
+                    <div>
+                        <!-- ====== INÍCIO DA SEÇÃO DE VOOS ====== -->
+                        <section class="voos-eua">
+                            <h2>Os voos mais procurados para os EUA</h2>
+
+                            <div class="filtros">
+                                <input type="text" placeholder="✈ Cidade ou aeroporto">
+                                <input type="text" placeholder="✈ Cidade ou aeroporto">
+                                <input type="text" placeholder="💰 Tarifa desejada">
+                            </div>
+
+                            <div class="cards-container">
+                                <div class="voo-card">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Miami_Beach_skyline.jpg"
+                                        alt="Miami">
+                                    <h3>São Paulo (GRU) para Miami (MIA)</h3>
+                                    <p>01/11/2025 - 06/11/2025</p>
+                                    <p class="preco">A partir de <span>R$4.168*</span></p>
+                                    <p class="info">Atualizado: 17 minutos atrás<br>Ida e volta | Econômica</p>
+                                    <button>Veja as últimas tarifas</button>
+                                </div>
+
+                                <div class="voo-card">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Lower_Manhattan_skyline_-_June_2017.jpg"
+                                        alt="Nova York">
+                                    <h3>São Paulo (GRU) para Nova York (NYC)</h3>
+                                    <p>11/11/2025 - 18/11/2025</p>
+                                    <p class="preco">A partir de <span>R$5.135*</span></p>
+                                    <p class="info">Atualizado: 1 hora atrás<br>Ida e volta | Econômica</p>
+                                    <button>Veja as últimas tarifas</button>
+                                </div>
+
+                                <div class="voo-card">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Miami_Beach_skyline.jpg"
+                                        alt="Miami">
+                                    <h3>São Paulo (SAO) para Miami (MIA)</h3>
+                                    <p>11/11/2025 - 18/11/2025</p>
+                                    <p class="preco">A partir de <span>R$2.860*</span></p>
+                                    <p class="info">Atualizado: 15 minutos atrás<br>Ida e volta | Econômica</p>
+                                    <button>Veja as últimas tarifas</button>
+                                </div>
+
+                                <div class="voo-card">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Charlotte_skyline_September_2018.jpg"
+                                        alt="Charlotte">
+                                    <h3>São Paulo (GRU) para Charlotte (CLT)</h3>
+                                    <p>01/11/2025 - 08/11/2025</p>
+                                    <p class="preco">A partir de <span>R$5.454*</span></p>
+                                    <p class="info">Atualizado: 22 minutos atrás<br>Ida e volta | Econômica</p>
+                                    <button>Veja as últimas tarifas</button>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- ====== ESTILOS ====== -->
+                    <style>
+                        /* ===== Espaçamento entre seções ===== */
+                        .voos-eua {
+                            margin-top: 80px;
+                            /* garante que fique embaixo da imagem anterior */
+                            text-align: center;
+                            font-family: "Segoe UI", Arial, sans-serif;
+                            color: #003366;
+                            max-width: 1100px;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+
+                        /* ===== Título ===== */
+                        .voos-eua h2 {
+                            font-size: 26px;
+                            margin-bottom: 20px;
+                            color: #003366;
+                        }
+
+                        /* ===== Filtros ===== */
+                        .filtros {
+                            display: flex;
+                            justify-content: center;
+                            gap: 10px;
+                            margin-bottom: 30px;
+                            flex-wrap: wrap;
+                        }
+
+                        .filtros input {
+                            padding: 10px 15px;
+                            border: 1px solid #ccc;
+                            border-radius: 6px;
+                            min-width: 200px;
+                            font-size: 14px;
+                        }
+
+                        /* ===== Cards ===== */
+                        .cards-container {
+                            display: flex;
+                            justify-content: center;
+                            flex-wrap: wrap;
+                            gap: 20px;
+                        }
+
+                        .voo-card {
+                            background: #fff;
+                            border-radius: 8px;
+                            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                            overflow: hidden;
+                            width: 250px;
+                            transition: transform 0.3s ease;
+                        }
+
+                        .voo-card:hover {
+                            transform: translateY(-5px);
+                        }
+
+                        .voo-card img {
+                            width: 100%;
+                            height: 150px;
+                            object-fit: cover;
+                        }
+
+                        .voo-card h3 {
+                            font-size: 16px;
+                            color: #003366;
+                            margin: 10px;
+                        }
+
+                        .voo-card p {
+                            margin: 5px 10px;
+                            color: #333;
+                            font-size: 14px;
+                        }
+
+                        .voo-card .preco {
+                            font-weight: bold;
+                        }
+
+                        .voo-card .preco span {
+                            color: #005EB8;
+                            font-size: 18px;
+                        }
+
+                        .voo-card .info {
+                            font-size: 12px;
+                            color: #666;
+                        }
+
+                        /* ===== Botão ===== */
+                        .voo-card button {
+                            background-color: #005EB8;
+                            color: white;
+                            border: none;
+                            border-radius: 4px;
+                            padding: 10px;
+                            width: 90%;
+                            margin: 10px;
+                            cursor: pointer;
+                            font-weight: bold;
+                        }
+
+                        .voo-card button:hover {
+                            background-color: #004799;
+                        }
+                    </style>
+                    <!-- ====== FIM DA SEÇÃO DE VOOS ====== -->
+            </div>
+
+
+
+        </body>
+
+    </div>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+<footer>
+
+    <p>&copy; 2025 Minha Empresa. Todos os direitos reservados.</p>
+</footer>
+
+
+
+
+
+
+
+</html>
